@@ -43,7 +43,14 @@ a:hover { color: var(--accent-dark); }
 }
 
 .title-project, .title-subtitle { display: block; }
-.title-project { letter-spacing: -.06em; }
+.title-project {
+  letter-spacing: -.06em;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 48%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .title-subtitle { margin-top: .28rem; font-size: .62em; font-weight: 700; letter-spacing: -.04em; line-height: 1.12; }
 
 .publication-authors {
