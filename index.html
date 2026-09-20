@@ -9,61 +9,127 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="./static/css/index.css?v=safevantage-20260920">
+  <link rel="stylesheet" href="./static/css/index.css?v=safevantage-20260920-2">
   <link rel="icon" href="./static/images/favicon.svg?v=safevantage">
-  <style>
-    .safevantage-header { background:#fff; }
-    .safevantage-header .hero-body { padding-bottom:2rem; }
-    .publication-title { letter-spacing:-.035em; }
-    .safevantage-figure { width:100%; border-radius:10px; box-shadow:0 12px 35px rgba(20,50,90,.14); }
-    .figure-panel { margin:2.5rem 0; }
-    .figure-panel img { display:block; width:100%; height:auto; border:1px solid #e5e7eb; border-radius:6px; }
-    .figure-caption { margin-top:.8rem; color:#52606d; line-height:1.55; }
-    .paper-note { border-left:4px solid #1f7a52; background:#fff; padding:1rem 1.25rem; border-radius:5px; }
-    .author-block { display:inline-block; }
-  </style>
 </head>
 <body>
-<section class="hero safevantage-header"><div class="hero-body"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column has-text-centered">
-  <h1 class="title is-1 publication-title">SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions</h1>
-  <div class="is-size-5 publication-authors">
-    <span class="author-block">Sean Hardesty Lewis<sup>1</sup>,</span>
-    <span class="author-block">Zuyi Guo<sup>2</sup>,</span>
-    <span class="author-block">Benwang Chen<sup>2</sup>,</span>
-    <span class="author-block">Zirui Li<sup>3</sup>,</span>
-    <span class="author-block">Hongyi Lin<sup>4</sup>,</span>
-    <span class="author-block">and Heye Huang<sup>*2</sup></span>
-  </div>
-  <div class="is-size-6 publication-authors">
-    <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology, Cambridge, MA, USA</span><br>
-    <span class="author-block"><sup>2</sup>Cho Chun Shik Graduate School of Mobility, KAIST, Daejeon, South Korea</span><br>
-    <span class="author-block"><sup>3</sup>School of Mechanical and Aerospace Engineering, Nanyang Technological University, Singapore</span><br>
-    <span class="author-block"><sup>4</sup>School of Vehicle and Mobility, Tsinghua University, Beijing, China</span>
-  </div>
-  <div class="column has-text-centered"><div class="publication-links">
-    <span class="link-block"><a href="#project" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-alt"></i></span><span>Abstract</span></a></span>
-    <span class="link-block"><a href="#method" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-project-diagram"></i></span><span>Method</span></a></span>
-    <span class="link-block"><a href="#results" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-chart-line"></i></span><span>Results</span></a></span>
-    <span class="link-block"><a href="./paper_source/main.tex" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-code"></i></span><span>Paper source</span></a></span>
-    <span class="link-block"><a href="https://github.com/safevantage" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></span>
-  </div></div>
-</div></div></div></div></section>
+  <main>
+    <header class="safevantage-header">
+      <div class="container is-max-desktop header-inner">
+        <p class="eyebrow">Embodied AI · Active perception · Semantic memory</p>
+        <h1 class="publication-title">SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions</h1>
+        <div class="publication-authors">
+          <span class="author-block">Sean Hardesty Lewis<sup>1</sup>,</span>
+          <span class="author-block">Zuyi Guo<sup>2</sup>,</span>
+          <span class="author-block">Benwang Chen<sup>2</sup>,</span>
+          <span class="author-block">Zirui Li<sup>3</sup>,</span>
+          <span class="author-block">Hongyi Lin<sup>4</sup>,</span>
+          <span class="author-block">and Heye Huang<sup>*2</sup></span>
+        </div>
+        <div class="affiliations">
+          <span><sup>1</sup>Massachusetts Institute of Technology, Cambridge, MA, USA</span>
+          <span><sup>2</sup>Cho Chun Shik Graduate School of Mobility, KAIST, Daejeon, South Korea</span>
+          <span><sup>3</sup>School of Mechanical and Aerospace Engineering, Nanyang Technological University, Singapore</span>
+          <span><sup>4</sup>School of Vehicle and Mobility, Tsinghua University, Beijing, China</span>
+          <small><sup>*</sup>Corresponding author</small>
+        </div>
+        <div class="publication-links" aria-label="Page links">
+          <a href="#project" class="button is-rounded is-dark"><span class="icon"><i class="fas fa-file-alt"></i></span><span>Abstract</span></a>
+          <a href="#method" class="button is-rounded is-dark"><span class="icon"><i class="fas fa-project-diagram"></i></span><span>Method</span></a>
+          <a href="#results" class="button is-rounded is-dark"><span class="icon"><i class="fas fa-chart-line"></i></span><span>Results</span></a>
+          <a href="./paper_source/main.tex" class="button is-rounded is-dark"><span class="icon"><i class="fas fa-file-code"></i></span><span>Paper source</span></a>
+          <a href="https://github.com/safevantage" class="button is-rounded is-dark"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a>
+        </div>
+      </div>
+    </header>
 
-<section class="hero teaser"><div class="container is-max-desktop"><div class="hero-body"><figure class="figure-panel" aria-label="Figure 1: SafeVantage claim-view memory"><img class="safevantage-figure" src="./static/images/figures/safevantage-teaser.png" alt="SafeVantage links semantic claims to supporting views and selective decisions"></figure><h2 class="subtitle has-text-centered mt-5">Vantage-aware memory links semantic claims to supporting views, active acquisition, and selective decisions.</h2></div></div></section>
+    <section class="hero teaser" aria-labelledby="teaser-heading">
+      <div class="container is-max-desktop">
+        <figure class="hero-figure" aria-label="Figure 1: SafeVantage claim-view memory">
+          <img src="./static/images/figures/safevantage-teaser.png" alt="SafeVantage links semantic claims to supporting views and selective decisions">
+        </figure>
+        <div class="teaser-copy">
+          <p id="teaser-heading">A memory for deciding what an embodied agent has seen, what remains uncertain, and which view should come next.</p>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="project"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column is-four-fifths"><h2 class="title is-3">Abstract</h2><div class="content has-text-justified"><p>Embodied agents must decide both <em>where to look</em> and <em>when the evidence warrants a decision</em>. SafeVantage is a semantic memory and active-perception policy that records the views supporting each claim. The policy uses this evidence state to select corroborating views and to output <strong>Yes</strong>, <strong>No</strong>, or <strong>Wait</strong>. On a held-out ProcTHOR test spanning 232 unseen houses and 7,424 paired episodes per method and action budget, SafeVantage raises macro-F1 from 0.4845 to 0.5289 and reduces travel from 7.23 to 3.56 m at eight actions, while risk falls from 0.3964 to 0.3872. At twelve actions, macro-F1 rises from 0.5855 to 0.6270, risk falls from 0.3685 to 0.3523, and travel falls from 8.42 to 7.90 m.</p><p>On a separate 96-house cohort, removing supporting-view identity, target-ray alignment, and yaw diversity lowers macro-F1 by 4.35 points at eight actions and 1.15 at twelve. Equal-input HM3D comparisons show lower selective risk, and ScanNet interventions show that answer quality decreases when supporting views are removed and recovers when they are restored. Together, the results support vantage-aware memory as an interface between active perception and selective decision-making.</p></div></div></div></div></section>
+    <section class="content-section" id="project" aria-labelledby="abstract-heading">
+      <div class="container is-max-desktop reading-column">
+        <p class="section-label">Overview</p>
+        <h2 id="abstract-heading">Abstract</h2>
+        <div class="prose">
+          <p>Embodied agents must decide both <em>where to look</em> and <em>when the evidence warrants a decision</em>. SafeVantage is a semantic memory and active-perception policy that records the views supporting each claim. The policy uses this evidence state to select corroborating views and to output <strong>Yes</strong>, <strong>No</strong>, or <strong>Wait</strong>.</p>
+          <p>On a held-out ProcTHOR test spanning 232 unseen houses and 7,424 paired episodes per method and action budget, SafeVantage raises macro-F1 from 0.4845 to 0.5289 and reduces travel from 7.23 to 3.56 m at eight actions, while risk falls from 0.3964 to 0.3872. At twelve actions, macro-F1 rises from 0.5855 to 0.6270, risk falls from 0.3685 to 0.3523, and travel falls from 8.42 to 7.90 m.</p>
+          <p>On a separate 96-house cohort, removing supporting-view identity, target-ray alignment, and yaw diversity lowers macro-F1 by 4.35 points at eight actions and 1.15 at twelve. Equal-input HM3D comparisons show lower selective risk, and ScanNet interventions show that answer quality decreases when supporting views are removed and recovers when they are restored.</p>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="method"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column is-four-fifths"><h2 class="title is-3">Method</h2><div class="content has-text-justified"><p>For each scene, SafeVantage captures posed observations containing RGB, optional depth, camera pose, and time. A semantic claim is represented by its supporting views, support count, and optional 3D target estimate. This record preserves which observations justify a claim and distinguishes one weak observation from a repeated spatial pattern.</p><p>The memory separates target visibility, property or relation sufficiency, search coverage, and answer correctness. Before a provisional detection, the policy balances spatial novelty, category-room evidence, and travel. After a detection, it seeks a corroborating view from a distinct position and uses the resulting evidence state for the final decision. The selective head emits <strong>Yes</strong>, <strong>No</strong>, or <strong>Wait</strong> under calibrated thresholds.</p><figure class="figure-panel"><img src="./static/images/figures/coverage-evidence.png" alt="Spatial coverage and evidence-sufficient decisions"><figcaption class="figure-caption"><strong>Figure 2.</strong> Spatial coverage determines whether a view supports, defers, or cannot resolve a claim.</figcaption></figure></div></div></div></div></section>
+    <section class="content-section section-tint" id="method" aria-labelledby="method-heading">
+      <div class="container is-max-desktop reading-column">
+        <p class="section-label">Representation and policy</p>
+        <h2 id="method-heading">Method</h2>
+        <div class="prose">
+          <p>For each scene, SafeVantage captures posed observations containing RGB, optional depth, camera pose, and time. A semantic claim is represented by its supporting views, support count, and optional 3D target estimate. This record preserves which observations justify a claim and distinguishes one weak observation from a repeated spatial pattern.</p>
+          <p>The memory separates target visibility, property or relation sufficiency, search coverage, and answer correctness. Before a provisional detection, the policy balances spatial novelty, category-room evidence, and travel. After a detection, it seeks a corroborating view from a distinct position and uses the resulting evidence state for the final decision. The selective head emits <strong>Yes</strong>, <strong>No</strong>, or <strong>Wait</strong> under calibrated thresholds.</p>
+        </div>
+        <figure class="figure-panel">
+          <img src="./static/images/figures/coverage-evidence.png" alt="Spatial coverage and evidence-sufficient decisions">
+          <figcaption><strong>Figure 2.</strong> Spatial coverage determines whether a view supports, defers, or cannot resolve a claim.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<section class="section" id="results"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column is-four-fifths"><h2 class="title is-3">Results</h2><div class="paper-note"><p class="has-text-weight-bold">Held-out ProcTHOR performance</p><p>At eight actions, SafeVantage improves macro-F1 from 0.4845 to 0.5289, raises answer rate from 0.3772 to 0.4296, cuts travel from 7.23 to 3.56 m, and reduces mean risk from 0.3964 to 0.3872. At twelve actions, macro-F1 improves from 0.5855 to 0.6270 and risk falls from 0.3685 to 0.3523.</p></div><figure class="figure-panel"><img src="./static/images/figures/baseline-comparison.png" alt="SafeVantage compared with five equal-budget acquisition policies"><figcaption class="figure-caption"><strong>Figure 3.</strong> SafeVantage compared with five equal-budget policies; points show paired differences with 95% scene-bootstrap intervals.</figcaption></figure><figure class="figure-panel"><img src="./static/images/figures/trajectory-focus.png" alt="Held-out trajectory showing SafeVantage reaching resolving evidence"><figcaption class="figure-caption"><strong>Figure 4.</strong> A held-out episode in which SafeVantage reaches resolving evidence in 5.4 m versus 13.7 m for the comparator.</figcaption></figure><figure class="figure-panel"><img src="./static/images/figures/vantage-ablation.png" alt="Ablation of vantage-aware memory components"><figcaption class="figure-caption"><strong>Figure 5.</strong> Removing vantage-aware state lowers macro-F1 on 96 validation houses.</figcaption></figure><figure class="figure-panel"><img src="./static/images/figures/evidence-restoration.png" alt="Controlled restoration of target-visible evidence improves language-model answers"><figcaption class="figure-caption"><strong>Figure 6.</strong> Restoring exact target-visible evidence improves reader decisions in a controlled intervention.</figcaption></figure><p>Equal-input HM3D experiments and ScanNet view-removal studies test the same representation outside ProcTHOR. The paper source package contains the complete methods, tables, bibliography, and figure files.</p></div></div></div></div></section>
+    <section class="content-section" id="results" aria-labelledby="results-heading">
+      <div class="container is-max-desktop reading-column">
+        <p class="section-label">Evaluation</p>
+        <h2 id="results-heading">Results</h2>
+        <div class="metric-grid" aria-label="Headline evaluation results">
+          <div class="metric"><strong>+4.44 pts</strong><span>macro-F1 at 8 actions</span></div>
+          <div class="metric"><strong>−3.67 m</strong><span>travel at 8 actions</span></div>
+          <div class="metric"><strong>232</strong><span>unseen ProcTHOR houses</span></div>
+        </div>
+        <div class="prose">
+          <p>At eight actions, SafeVantage improves macro-F1 from 0.4845 to 0.5289, raises answer rate from 0.3772 to 0.4296, cuts travel from 7.23 to 3.56 m, and reduces mean risk from 0.3964 to 0.3872. At twelve actions, macro-F1 improves from 0.5855 to 0.6270 and risk falls from 0.3685 to 0.3523.</p>
+        </div>
+        <div class="results-figures">
+          <figure class="figure-panel"><img src="./static/images/figures/baseline-comparison.png" alt="SafeVantage compared with five equal-budget acquisition policies"><figcaption><strong>Figure 3.</strong> SafeVantage compared with equal-budget acquisition policies.</figcaption></figure>
+          <figure class="figure-panel"><img src="./static/images/figures/trajectory-focus.png" alt="Held-out trajectory showing SafeVantage reaching resolving evidence"><figcaption><strong>Figure 4.</strong> A held-out episode reaching resolving evidence sooner.</figcaption></figure>
+          <figure class="figure-panel"><img src="./static/images/figures/vantage-ablation.png" alt="Ablation of vantage-aware memory components"><figcaption><strong>Figure 5.</strong> Removing vantage-aware state lowers macro-F1.</figcaption></figure>
+          <figure class="figure-panel"><img src="./static/images/figures/evidence-restoration.png" alt="Controlled restoration of target-visible evidence improves language-model answers"><figcaption><strong>Figure 6.</strong> Restoring target-visible evidence improves decisions.</figcaption></figure>
+        </div>
+        <div class="prose"><p>Equal-input HM3D experiments and ScanNet view-removal studies test the same representation outside ProcTHOR. The paper source package contains the complete methods, tables, bibliography, and figure files.</p></div>
+      </div>
+    </section>
 
-<section class="section" id="paper"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column is-four-fifths"><h2 class="title is-3">Paper and code</h2><div class="content has-text-justified"><p>The complete paper source, tables, bibliography, and figures are included in the copied source package. The project repository is maintained under the SafeVantage organization.</p><p class="mt-3"><a class="button is-link is-small" href="./paper_source/main.tex">Open paper source</a> <a class="button is-light is-small" href="https://github.com/safevantage">Open code</a></p></div></div></div></div></section>
+    <section class="content-section section-tint" id="paper" aria-labelledby="paper-heading">
+      <div class="container is-max-desktop reading-column">
+        <p class="section-label">Materials</p>
+        <h2 id="paper-heading">Paper and code</h2>
+        <div class="prose"><p>The complete paper source, tables, bibliography, and figures are included in the project repository.</p></div>
+        <div class="resource-links"><a class="button is-link is-rounded" href="./paper_source/main.tex">Open paper source</a><a class="button is-light is-rounded" href="https://github.com/safevantage">Open code</a></div>
+      </div>
+    </section>
 
-<section class="section" id="BibTeX"><div class="container is-max-desktop content"><h2 class="title">How to cite</h2><p>For manuscripts, talks, and other work citing the current version, use:</p><pre><code>Lewis, S. H., Guo, Z., Chen, B., Li, Z., Lin, H., &amp; Huang, H. (2026).
+    <section class="content-section citation-section" id="BibTeX" aria-labelledby="cite-heading">
+      <div class="container is-max-desktop reading-column">
+        <p class="section-label">Reference</p>
+        <h2 id="cite-heading">How to cite</h2>
+        <p>For manuscripts, talks, and other work citing the current version, use:</p>
+        <pre><code>Lewis, S. H., Guo, Z., Chen, B., Li, Z., Lin, H., &amp; Huang, H. (2026).
 SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions.
 ICRA submission.
-https://safevantage.github.io/</code></pre></div></section>
+https://safevantage.github.io/</code></pre>
+      </div>
+    </section>
+  </main>
 
-<footer class="footer site-footer"><div class="container"><div class="columns is-vcentered"><div class="column"><p class="site-footer-title">SafeVantage</p><p class="site-footer-copy">Vantage-aware memory for reliable embodied decisions.</p></div><div class="column has-text-right"><p><a href="https://github.com/safevantage">Code</a> · <a href="./paper_source/main.tex">Paper source</a> · <a href="mailto:end@mit.edu">Contact</a></p></div></div></div></footer>
+  <footer class="site-footer">
+    <div class="container is-max-desktop footer-inner">
+      <div><p class="site-footer-title">SafeVantage</p><p class="site-footer-copy">Vantage-aware memory for reliable embodied decisions.</p></div>
+      <nav aria-label="Footer links"><a href="https://github.com/safevantage">Code</a><a href="./paper_source/main.tex">Paper source</a><a href="mailto:end@mit.edu">Contact</a></nav>
+    </div>
+  </footer>
 </body>
 </html>
