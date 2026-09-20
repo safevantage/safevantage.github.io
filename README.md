@@ -1,7 +1,9 @@
-# PermitKey project website
+# SafeVantage
 
-This repository contains the public-facing PermitKey project page, adapted from the [Nerfies project-page template](https://github.com/nerfies/nerfies.github.io). The template and this website are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the PermitKey data release and research code will have separate, explicit terms.
+Public project page for **SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions**.
 
-The site is a static GitHub Pages website. The `data/` page is the canonical hub for the aggregate release, documentation, and validation record.
+The paper source, figures, tables, and build notes are collected in [`paper_source/`](paper_source/). The site is published at [safevantage.github.io](https://safevantage.github.io/), and the project organization is [github.com/safevantage](https://github.com/safevantage).
 
-PermitKey currently covers 150,044,555 retained source records across 85 contributions. The public tables use jurisdiction-year-work-type and 0.1-degree grid-year-work-type tables with source-record and multi-label semantics.
+## Local preview
+
+Serve this directory with any static-file server and open `index.html`.

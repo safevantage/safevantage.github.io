@@ -1,0 +1,42 @@
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcccc@{}}
+  \toprule
+  & \multicolumn{2}{c}{8 actions}
+  & \multicolumn{2}{c}{12 actions} \\
+  \cmidrule(lr){2-3}\cmidrule(l){4-5}
+
+  Variant
+  & F1$\uparrow$ & Loss (pp)$\downarrow$
+  & F1$\uparrow$ & Loss (pp)$\downarrow$ \\
+  \midrule
+
+  \textbf{Full \method{}}
+  & \textbf{0.5307} & --
+  & \textbf{0.6149} & -- \\
+
+  $-$ claim provenance
+  & 0.4753 & \textbf{+5.54}
+  & 0.5826 & \textbf{+3.23} \\
+
+  $-$ target-ray alignment
+  & 0.4749 & \textbf{+5.58}
+  & 0.5819 & \textbf{+3.30} \\
+
+  $-$ yaw diversity
+  & 0.5311 & $-0.04$
+  & 0.6162 & $-0.13$ \\
+
+  $-$ base geometry
+  & 0.5255 & \textbf{+0.52}
+  & 0.6167 & $-0.18$ \\
+
+  $-$ directed exploration
+  & 0.5247 & \textbf{+0.60}
+  & 0.4923 & \textbf{+12.26} \\
+
+  \addlinespace[2pt]
+  Confidence backbone only
+  & 0.4847 & \textbf{+4.60}
+  & 0.4835 & \textbf{+13.14} \\
+
+  \bottomrule
+\end{tabular*}

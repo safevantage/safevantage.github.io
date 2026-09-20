@@ -1,4 +1,4 @@
-/* PermitKey keeps the small interaction layer from the Nerfies project-page pattern. */
+/* SafeVantage keeps a small interaction layer for the project page. */
 $(document).ready(function() {
   $(".navbar-burger").click(function() {
     $(".navbar-burger").toggleClass("is-active");

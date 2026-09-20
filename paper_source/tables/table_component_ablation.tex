@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lccc ccc@{}}
+  \toprule
+  & \multicolumn{3}{c}{8 actions} & \multicolumn{3}{c}{12 actions} \\
+  \cmidrule(lr){2-4}\cmidrule(l){5-7}
+  Variant & Risk$\downarrow$ & F1$\uparrow$ & Travel$\downarrow$ & Risk$\downarrow$ & F1$\uparrow$ & Travel$\downarrow$ \\
+  \midrule
+  \textbf{Full \method{}} & \textbf{0.3799} & \textbf{0.5712} & \textbf{2.89} & \textbf{0.3312} & \textbf{0.6736} & \textbf{6.29} \\
+  $-$ claim provenance & 0.3940 & 0.5148 & 2.88 & 0.3510 & 0.6414 & 6.28 \\
+  $-$ target-ray alignment & 0.3940 & 0.5148 & 2.88 & 0.3510 & 0.6413 & 6.28 \\
+  $-$ yaw diversity & 0.3806 & 0.5706 & 2.90 & 0.3292 & 0.6744 & 6.29 \\
+  $-$ base geometry & 0.3828 & 0.5617 & 3.05 & 0.3321 & 0.6714 & 6.29 \\
+  $-$ directed exploration & 0.3847 & 0.5608 & 2.86 & 0.3685 & 0.5391 & 4.36 \\
+  Confidence backbone only & 0.3892 & 0.5243 & 2.85 & 0.3808 & 0.5121 & 4.36 \\
+  \bottomrule
+\end{tabular}

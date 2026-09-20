@@ -1,0 +1,106 @@
+\begin{table}[t]
+\centering
+\caption{
+Equal-budget held-out ProcTHOR test.
+\method{} ranks first in risk, macro-F1, and answer rate at both horizons;
+bold marks each budget's best value. Travel is reported in meters.
+}
+\label{tab:locked-all-baselines}
+
+\small
+\renewcommand{\arraystretch}{1.10}
+\setlength{\tabcolsep}{3.2pt}
+
+\resizebox{0.98\columnwidth}{!}{%
+\begin{tabular}{@{}clcccc@{}}
+\toprule
+Budget
+& Method
+& Risk$\downarrow$
+& Macro-F1$\uparrow$
+& Answer$\uparrow$
+& Travel$\downarrow$ \\
+\midrule
+
+8
+& \textbf{SafeVantage}
+& \textbf{0.387}
+& \textbf{0.529}
+& \textbf{0.430}
+& 3.56 \\
+
+& Category-room prior
+& 0.396
+& 0.484
+& 0.377
+& 7.23 \\
+
+& Nearest frontier
+& 0.398
+& 0.491
+& 0.394
+& \textbf{3.46} \\
+
+& Detector-conf. gain
+& 0.407
+& 0.446
+& 0.333
+& 5.94 \\
+
+& Coverage gain
+& 0.422
+& 0.406
+& 0.305
+& 6.31 \\
+
+& Random
+& 0.427
+& 0.434
+& 0.350
+& 19.12 \\
+
+\addlinespace[2pt]
+\midrule
+
+12
+& \textbf{SafeVantage}
+& \textbf{0.352}
+& \textbf{0.627}
+& \textbf{0.555}
+& 7.90 \\
+
+& Detector-conf. gain
+& 0.369
+& 0.585
+& 0.516
+& 8.42 \\
+
+& Category-room prior
+& 0.382
+& 0.490
+& 0.356
+& 8.16 \\
+
+& Coverage gain
+& 0.385
+& 0.534
+& 0.471
+& 8.97 \\
+
+& Nearest frontier
+& 0.395
+& 0.464
+& 0.337
+& \textbf{5.28} \\
+
+& Random
+& 0.420
+& 0.451
+& 0.361
+& 19.25 \\
+
+\bottomrule
+\end{tabular}%
+}
+
+\end{table}
