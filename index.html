@@ -39,17 +39,6 @@
       </div>
     </header>
 
-    <section class="hero teaser" aria-labelledby="teaser-heading">
-      <div class="container is-max-desktop">
-        <figure class="hero-figure" aria-label="Figure 1: SafeVantage claim-view memory">
-          <img src="./static/images/figures/safevantage-teaser.png" alt="SafeVantage links semantic claims to supporting views and selective decisions">
-        </figure>
-        <div class="teaser-copy">
-          <p id="teaser-heading"><strong>Overview of SafeVantage.</strong> A vantage-aware memory that retains the viewpoints supporting each claim and uses the evidence to select the next view and make the final <em>Yes</em>, <em>No</em>, or <em>Abstain</em> decision.</p>
-        </div>
-      </div>
-    </section>
-
     <section class="content-section" id="project" aria-labelledby="abstract-heading">
       <div class="container is-max-desktop reading-column">
         <h2 id="abstract-heading">Abstract</h2>
@@ -57,6 +46,24 @@
           <p>Embodied agents must decide both <em>where to look</em> and <em>when the evidence warrants a decision</em>. SafeVantage is a semantic memory and active-perception policy that records the views supporting each claim. The policy uses this evidence state to select corroborating views and to output <strong>Yes</strong>, <strong>No</strong>, or <strong>Abstain</strong>.</p>
           <p>On a held-out ProcTHOR test spanning 232 unseen houses and 7,424 paired episodes per method and action budget, SafeVantage raises macro-F1 from 0.4845 to 0.5289 and reduces travel from 7.23 to 3.56 m at eight actions, while risk falls from 0.3964 to 0.3872. At twelve actions, macro-F1 rises from 0.5855 to 0.6270, risk falls from 0.3685 to 0.3523, and travel falls from 8.42 to 7.90 m.</p>
           <p>On a separate 96-house cohort, removing supporting-view identity, target-ray alignment, and yaw diversity lowers macro-F1 by 4.35 points at eight actions and 1.15 at twelve. Equal-input HM3D comparisons show lower selective risk, and ScanNet interventions show that answer quality decreases when supporting views are removed and recovers when they are restored.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser" aria-labelledby="teaser-heading">
+      <div class="container is-max-desktop">
+        <figure class="hero-figure" aria-label="Figure 1: SafeVantage claim-view memory">
+          <img src="./static/images/figures/safevantage-teaser.png" alt="SafeVantage links semantic claims to supporting views and selective decisions">
+          <figcaption class="figure-caption"><strong>Figure 1.</strong> Overview of SafeVantage: a vantage-aware memory retains the viewpoints supporting each claim and uses the evidence to select the next view and make the final Yes, No, or Abstain decision.</figcaption>
+        </figure>
+        <div class="teaser-copy">
+          <p id="teaser-heading">A memory for deciding what an embodied agent has seen, what remains uncertain, and which view should come next.</p>
+        </div>
+        <div class="video-panel">
+          <video autoplay muted loop playsinline controls preload="metadata" aria-label="3D-Mem demonstration video">
+            <source src="https://umass-embodied-agi.github.io/3D-Mem/static/videos/teaser.mp4" type="video/mp4">
+          </video>
+          <p class="video-credit">Demonstration video hosted by <a href="https://umass-embodied-agi.github.io/3D-Mem/">3D-Mem</a>.</p>
         </div>
       </div>
     </section>
