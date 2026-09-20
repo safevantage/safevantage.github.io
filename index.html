@@ -45,7 +45,7 @@
           <img src="./static/images/figures/safevantage-teaser.png" alt="SafeVantage links semantic claims to supporting views and selective decisions">
         </figure>
         <div class="teaser-copy">
-          <p id="teaser-heading">A memory for deciding what an embodied agent has seen, what remains uncertain, and which view should come next.</p>
+          <p id="teaser-heading"><strong>Overview of SafeVantage.</strong> A vantage-aware memory that retains the viewpoints supporting each claim and uses the evidence to select the next view and make the final <em>Yes</em>, <em>No</em>, or <em>Abstain</em> decision.</p>
         </div>
       </div>
     </section>
@@ -54,7 +54,7 @@
       <div class="container is-max-desktop reading-column">
         <h2 id="abstract-heading">Abstract</h2>
         <div class="prose">
-          <p>Embodied agents must decide both <em>where to look</em> and <em>when the evidence warrants a decision</em>. SafeVantage is a semantic memory and active-perception policy that records the views supporting each claim. The policy uses this evidence state to select corroborating views and to output <strong>Yes</strong>, <strong>No</strong>, or <strong>Wait</strong>.</p>
+          <p>Embodied agents must decide both <em>where to look</em> and <em>when the evidence warrants a decision</em>. SafeVantage is a semantic memory and active-perception policy that records the views supporting each claim. The policy uses this evidence state to select corroborating views and to output <strong>Yes</strong>, <strong>No</strong>, or <strong>Abstain</strong>.</p>
           <p>On a held-out ProcTHOR test spanning 232 unseen houses and 7,424 paired episodes per method and action budget, SafeVantage raises macro-F1 from 0.4845 to 0.5289 and reduces travel from 7.23 to 3.56 m at eight actions, while risk falls from 0.3964 to 0.3872. At twelve actions, macro-F1 rises from 0.5855 to 0.6270, risk falls from 0.3685 to 0.3523, and travel falls from 8.42 to 7.90 m.</p>
           <p>On a separate 96-house cohort, removing supporting-view identity, target-ray alignment, and yaw diversity lowers macro-F1 by 4.35 points at eight actions and 1.15 at twelve. Equal-input HM3D comparisons show lower selective risk, and ScanNet interventions show that answer quality decreases when supporting views are removed and recovers when they are restored.</p>
         </div>
@@ -66,11 +66,11 @@
         <h2 id="method-heading">Method</h2>
         <div class="prose">
           <p>For each scene, SafeVantage captures posed observations containing RGB, optional depth, camera pose, and time. A semantic claim is represented by its supporting views, support count, and optional 3D target estimate. This record preserves which observations justify a claim and distinguishes one weak observation from a repeated spatial pattern.</p>
-          <p>The memory separates target visibility, property or relation sufficiency, search coverage, and answer correctness. Before a provisional detection, the policy balances spatial novelty, category-room evidence, and travel. After a detection, it seeks a corroborating view from a distinct position and uses the resulting evidence state for the final decision. The selective head emits <strong>Yes</strong>, <strong>No</strong>, or <strong>Wait</strong> under calibrated thresholds.</p>
+          <p>The memory separates target visibility, property or relation sufficiency, search coverage, and answer correctness. Before a provisional detection, the policy balances spatial novelty, category-room evidence, and travel. After a detection, it seeks a corroborating view from a distinct position and uses the resulting evidence state for the final decision. The selective head emits <strong>Yes</strong>, <strong>No</strong>, or <strong>Abstain</strong> under calibrated thresholds.</p>
         </div>
         <figure class="figure-panel">
-          <img src="./static/images/figures/coverage-evidence.png" alt="Spatial coverage and evidence-sufficient decisions">
-          <figcaption><strong>Figure 2.</strong> Spatial coverage determines whether a view supports, defers, or cannot resolve a claim.</figcaption>
+          <img src="./static/images/figures/coverage-evidence.png" alt="Viewpoint support and search coverage provide complementary evidence">
+          <figcaption><strong>Figure 2.</strong> Viewpoint support and search coverage provide complementary evidence.</figcaption>
         </figure>
       </div>
     </section>
@@ -82,9 +82,8 @@
           <p>At eight actions, SafeVantage improves macro-F1 from 0.4845 to 0.5289, raises answer rate from 0.3772 to 0.4296, cuts travel from 7.23 to 3.56 m, and reduces mean risk from 0.3964 to 0.3872. At twelve actions, macro-F1 improves from 0.5855 to 0.6270 and risk falls from 0.3685 to 0.3523.</p>
         </div>
         <div class="results-figures">
-          <figure class="figure-panel"><img src="./static/images/figures/baseline-comparison.png" alt="SafeVantage compared with five equal-budget acquisition policies"><figcaption><strong>Figure 3.</strong> SafeVantage compared with equal-budget acquisition policies.</figcaption></figure>
-          <figure class="figure-panel"><img src="./static/images/figures/trajectory-focus.png" alt="Held-out trajectory showing SafeVantage reaching resolving evidence"><figcaption><strong>Figure 4.</strong> A held-out episode reaching resolving evidence sooner.</figcaption></figure>
-          <figure class="figure-panel"><img src="./static/images/figures/vantage-ablation.png" alt="Ablation of vantage-aware memory components"><figcaption><strong>Figure 5.</strong> Removing vantage-aware state lowers macro-F1.</figcaption></figure>
+          <figure class="figure-panel"><img src="./static/images/figures/trajectory-focus.png" alt="One held-out episode comparing category-room prior with SafeVantage"><figcaption><strong>Figure 3.</strong> One held-out episode for “Is there a paper towel in the room?”</figcaption></figure>
+          <figure class="figure-panel"><img src="./static/images/figures/vantage-ablation.png" alt="Ablation of vantage-aware memory components"><figcaption><strong>Figure 4.</strong> Removing vantage-aware state lowers macro-F1.</figcaption></figure>
         </div>
         <div class="prose"><p>Equal-input HM3D experiments and ScanNet view-removal studies test the same representation outside ProcTHOR. The paper source package contains the complete methods, tables, bibliography, and figure files.</p></div>
       </div>

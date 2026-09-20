@@ -42,8 +42,8 @@ Embodied agents must decide both \emph{where to look} and \emph{when the evidenc
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\linewidth]{figures/heyefig1.png}
-  \caption{\textbf{\method{} links semantic claims to supporting views.} The policy uses the same evidence state to choose the next view and the final \textsc{Yes}/\textsc{No}/\textsc{Wait} decision.}
+  \includegraphics[width=\linewidth]{figures/zuyi_figure/framework_v2.pdf}
+  \caption{\textbf{Overview of \method{}.} A vantage-aware memory retains the viewpoints supporting each claim and uses the evidence to select the next view and make the final \textsc{Yes}/\textsc{No}/\textsc{Abstain} decision.}
   \label{fig:teaser}
 \end{figure}
 
@@ -131,17 +131,13 @@ All compared policies operate on the same action graph. Random chooses a determi
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.96\textwidth]{figures/fig_2v1.png}
+  \includegraphics[width=0.96\textwidth]{figures/zuyi_figure/method.pdf}
   \caption{
-  \textbf{Spatial coverage bounds evidence-sufficient decisions.}
-  (a) Candidate viewpoints are restricted to valid navigable space.
-  Views with direct target visibility provide positive support for a claim,
-  whereas partial or context-only observations remain unresolved.
-  (b) Different coverage states imply different claim-level decisions:
-  sufficient target evidence supports a positive commitment, while partial
-  or context-only evidence should trigger deferment rather than an
-  unsupported absence decision. This distinction separates
-  \emph{missing evidence} from \emph{evidence of absence}.
+  \textbf{Viewpoint support and search coverage provide complementary evidence.}
+  Navigable viewpoints differ in the target evidence they reveal. Supporting
+  observations provide positive evidence, whereas partial or context-only
+  observations do not justify absence. Retained views and target geometry
+  inform subsequent acquisition and selective decisions.
   }
   \label{fig:coverage}
 \end{figure*}
@@ -209,20 +205,12 @@ At eight actions, the strongest validation-selected comparator is category--room
 
 
 
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\linewidth]{figures/fig_locked_all_baseline_forest_right_favorable_v2.pdf}
-  \caption{\textbf{SafeVantage versus five equal-budget policies.} Points are paired differences; bars are 95\% scene-bootstrap intervals. Favorable values point left for risk/travel and right for macro-F1.}
-  \label{fig:locked-forest}
-\end{figure}
-
-Figure~\ref{fig:locked-forest} expands the comparison to all five baselines. \method{} ranks first in risk, macro-F1, and answer rate at both horizons, and travel is lower than four of five baselines. Nearest frontier travels 0.10~m less at eight actions and 2.63~m less at twelve, while \method{} improves macro-F1 by 0.0380/0.1630 and risk by 0.0109/0.0432.
 Figure~\ref{fig:locked-traces} follows one held-out positive query from route selection to decision. From the same start and eight-action budget, category--room prior travels 13.7~m without observing the paper towel and answers \textsc{No}; \method{} reaches the resolving view in 5.4~m and answers \textsc{Yes}.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig_locked_trajectory_focus.pdf}
-  \caption{\textbf{One held-out ProcTHOR episode.} From the same start and budget, SafeVantage observes the paper towel, answers \textsc{Yes}, and travels 5.4~m versus 13.7~m.}
+  \includegraphics[width=\linewidth]{figures/zuyi_figure/example_v2.pdf}
+  \caption{\textbf{One held-out episode for ``Is there a paper towel in the room?''} Both policies start from the same start with an 8-action budget and a positive ground-truth label. Category--room prior does not observe the target, answers \textsc{No}, and travels 13.7~m; \method{} acquires four supporting views, answers \textsc{Yes}, and travels 5.4~m.}
   \label{fig:locked-traces}
 \end{figure}
 
@@ -235,7 +223,7 @@ To test the mechanism directly, we remove supporting-view identity, target-ray a
     width=\linewidth,
     height=0.25\textheight,
     keepaspectratio
-  ]{figures/fig_grouped_vantage_ablation_cropped.pdf}
+  ]{figures/zuyi_figure/Fig_4.pdf}
   \caption{\textbf{Removing vantage-aware state lowers macro-F1.} Bars show full policy minus grouped removal on 96 validation houses; whiskers are paired 95\% intervals.}
   \label{fig:grouped-vantage}
 \end{figure}
