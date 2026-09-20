@@ -78,11 +78,6 @@
     <section class="content-section" id="results" aria-labelledby="results-heading">
       <div class="container is-max-desktop reading-column">
         <h2 id="results-heading">Results</h2>
-        <div class="metric-grid" aria-label="Headline evaluation results">
-          <div class="metric"><strong>+4.44 pts</strong><span>macro-F1 at 8 actions</span></div>
-          <div class="metric"><strong>−3.67 m</strong><span>travel at 8 actions</span></div>
-          <div class="metric"><strong>232</strong><span>unseen ProcTHOR houses</span></div>
-        </div>
         <div class="prose">
           <p>At eight actions, SafeVantage improves macro-F1 from 0.4845 to 0.5289, raises answer rate from 0.3772 to 0.4296, cuts travel from 7.23 to 3.56 m, and reduces mean risk from 0.3964 to 0.3872. At twelve actions, macro-F1 improves from 0.5855 to 0.6270 and risk falls from 0.3685 to 0.3523.</p>
         </div>
@@ -90,7 +85,6 @@
           <figure class="figure-panel"><img src="./static/images/figures/baseline-comparison.png" alt="SafeVantage compared with five equal-budget acquisition policies"><figcaption><strong>Figure 3.</strong> SafeVantage compared with equal-budget acquisition policies.</figcaption></figure>
           <figure class="figure-panel"><img src="./static/images/figures/trajectory-focus.png" alt="Held-out trajectory showing SafeVantage reaching resolving evidence"><figcaption><strong>Figure 4.</strong> A held-out episode reaching resolving evidence sooner.</figcaption></figure>
           <figure class="figure-panel"><img src="./static/images/figures/vantage-ablation.png" alt="Ablation of vantage-aware memory components"><figcaption><strong>Figure 5.</strong> Removing vantage-aware state lowers macro-F1.</figcaption></figure>
-          <figure class="figure-panel"><img src="./static/images/figures/evidence-restoration.png" alt="Controlled restoration of target-visible evidence improves language-model answers"><figcaption><strong>Figure 6.</strong> Restoring target-visible evidence improves decisions.</figcaption></figure>
         </div>
         <div class="prose"><p>Equal-input HM3D experiments and ScanNet view-removal studies test the same representation outside ProcTHOR. The paper source package contains the complete methods, tables, bibliography, and figure files.</p></div>
       </div>
