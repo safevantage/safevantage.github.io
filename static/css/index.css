@@ -149,9 +149,9 @@ a:hover { color: var(--accent-dark); }
 .figure-panel { margin: 3.25rem 0 0; }
 .figure-panel figcaption { margin-top: .85rem; color: var(--muted); font-size: .91rem; line-height: 1.55; }
 
-.results-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3.5rem 1.5rem; margin-top: 3rem; }
-.results-figures .figure-panel { margin: 0; }
-.results-figures .figure-panel img { height: 100%; object-fit: contain; background: #fff; }
+.results-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 3.5rem 1.5rem; margin: 3rem 0 2rem; }
+.results-figures .figure-panel { min-width: 0; margin: 0; }
+.results-figures .figure-panel img { height: auto; object-fit: contain; background: #fff; }
 
 .resource-links { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2rem; }
 .resource-links .button { font-weight: 600; }
