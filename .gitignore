@@ -1,7 +1,10 @@
 .DS_store
 .idea
 http_server.pid
-static/videos/
+static/videos/*
+!static/videos/safevantage-demo-v3.mp4
+!static/videos/safevantage-demo-v3.vtt
+!static/videos/safevantage-demo-v3-poster.jpg
 static/interpolation/
 static/js/*
 !static/js/index.js

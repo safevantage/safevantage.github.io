@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00.375 --> 00:05.625
+SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions.
+
+00:13.438 --> 00:19.562
+Is there a paper towel in the room? A first observation supplies partial evidence.
+
+00:20.400 --> 00:31.600
+SafeVantage links each claim to its source observations, camera poses, and estimated target location.
+
+00:32.406 --> 00:38.094
+Candidate geometry helps predict whether a viewpoint can reveal the target.
+
+00:38.906 --> 00:44.594
+View selection seeks expected reduction in decision loss while accounting for travel and distinct corroboration.
+
+00:45.446 --> 00:53.482
+Inspect the surrounding views.
+
+00:53.929 --> 01:03.750
+Move to a distinct viewpoint. Robot motion and the moving camera are illustrated.
+
+01:04.196 --> 01:09.554
+Retain the corroborating recorded observation.
+
+01:10.385 --> 01:19.615
+Supporting views come from distinct camera positions and provide consistent target estimates.
+
+01:20.385 --> 01:29.615
+A calibrated head combines viewpoint support, geometric agreement, and search coverage to return Yes, No, or Abstain.
+
+01:30.429 --> 01:41.571
+The manuscript evaluates 232 unseen ProcTHOR houses and 7,424 paired episodes per method and action budget.
+
+01:42.375 --> 01:47.625
+SafeVantage. safevantage.github.io
